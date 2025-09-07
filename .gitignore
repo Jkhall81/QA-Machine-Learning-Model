@@ -1,0 +1,51 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+.venv/
+env/
+venv/
+ENV/
+
+# Jupyter Notebook checkpoints (if used)
+.ipynb_checkpoints
+
+# macOS / Linux / Windows cruft
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Data folders (keep structure, ignore contents)
+data/processed/*
+data/models/*
+!data/raw/pass/
+!data/raw/fail/
+!data/raw/warning/
+!data/raw/ungraded/
+
+# But ignore raw transcripts too (if sensitive)
+data/raw/*
+
+# Allow keeping empty dirs with .gitkeep
+!.gitkeep
+
+# Model / cache files
+*.pkl
+*.joblib
+*.model
+*.bin
+
+# Datasets
+*.csv
+
+# FastAPI / Uvicorn cache (if ever re-added)
+*.db
+*.sqlite3
+
+# VS Code / IDE settings
+.vscode/
+.idea/
